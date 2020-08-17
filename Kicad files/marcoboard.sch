@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:marcoboard-cache
 EELAYER 29 0
 EELAYER END
 $Descr A3 16535 11693
@@ -14,14 +15,264 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Microchip_ATmega:ATmega32A-PU U?
+L power:GND #PWR?
+U 1 1 5F3ADC04
+P 1850 8750
+F 0 "#PWR?" H 1850 8500 50  0001 C CNN
+F 1 "GND" H 1855 8577 50  0000 C CNN
+F 2 "" H 1850 8750 50  0001 C CNN
+F 3 "" H 1850 8750 50  0001 C CNN
+	1    1850 8750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_C_Plug P?
+U 1 1 5F3AFCBB
+P 1800 10700
+F 0 "P?" H 1907 11967 50  0000 C CNN
+F 1 "USB_C_Plug" H 1907 11876 50  0000 C CNN
+F 2 "" H 1950 10700 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1950 10700 50  0001 C CNN
+	1    1800 10700
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 1250 5650
+$Comp
+L power:+5V #PWR?
+U 1 1 5F3AED1E
+P 1950 4700
+F 0 "#PWR?" H 1950 4550 50  0001 C CNN
+F 1 "+5V" H 1965 4873 50  0000 C CNN
+F 2 "" H 1950 4700 50  0001 C CNN
+F 3 "" H 1950 4700 50  0001 C CNN
+	1    1950 4700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1950 4750 1950 4700
+Wire Wire Line
+	1850 4750 1950 4750
+Text GLabel 2450 8050 2    50   Input ~ 0
+D-
+Text GLabel 2450 7950 2    50   Input ~ 0
+D+
+$Comp
+L Device:Crystal Y1
+U 1 1 5F3CD107
+P 1050 5400
+F 0 "Y1" V 1004 5531 50  0000 L CNN
+F 1 "Crystal" V 1095 5531 50  0000 L CNN
+F 2 "" H 1050 5400 50  0001 C CNN
+F 3 "~" H 1050 5400 50  0001 C CNN
+	1    1050 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1250 5450 1250 5550
+Wire Wire Line
+	1250 5550 1050 5550
+Wire Wire Line
+	1050 5550 1050 5650
+Wire Wire Line
+	900  5250 900  5650
+$Comp
+L Device:C_Small C2
+U 1 1 5F3D05E2
+P 1050 5750
+F 0 "C2" H 1142 5796 50  0000 L CNN
+F 1 "22p" H 1142 5705 50  0000 L CNN
+F 2 "" H 1050 5750 50  0001 C CNN
+F 3 "~" H 1050 5750 50  0001 C CNN
+	1    1050 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  5850 1050 5850
+Wire Wire Line
+	1050 5850 1050 5900
+Connection ~ 1050 5850
+$Comp
+L power:GND #PWR?
+U 1 1 5F3D27A7
+P 1050 5900
+F 0 "#PWR?" H 1050 5650 50  0001 C CNN
+F 1 "GND" H 1055 5727 50  0000 C CNN
+F 2 "" H 1050 5900 50  0001 C CNN
+F 3 "" H 1050 5900 50  0001 C CNN
+	1    1050 5900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5F3CFC4C
+P 900 5750
+F 0 "C1" H 992 5796 50  0000 L CNN
+F 1 "22p" H 992 5705 50  0000 L CNN
+F 2 "" H 900 5750 50  0001 C CNN
+F 3 "~" H 900 5750 50  0001 C CNN
+	1    900  5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  5250 1050 5250
+Connection ~ 1050 5250
+Wire Wire Line
+	1050 5250 1250 5250
+Connection ~ 1050 5550
+Text GLabel 2450 8150 2    50   Input ~ 0
+boot
+$Comp
+L power:+5V #PWR?
+U 1 1 5F3D7F78
+P 4250 10450
+F 0 "#PWR?" H 4250 10300 50  0001 C CNN
+F 1 "+5V" H 4265 10623 50  0000 C CNN
+F 2 "" H 4250 10450 50  0001 C CNN
+F 3 "" H 4250 10450 50  0001 C CNN
+	1    4250 10450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F3D8378
+P 4250 10850
+F 0 "#PWR?" H 4250 10600 50  0001 C CNN
+F 1 "GND" H 4255 10677 50  0000 C CNN
+F 2 "" H 4250 10850 50  0001 C CNN
+F 3 "" H 4250 10850 50  0001 C CNN
+	1    4250 10850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C3
+U 1 1 5F3D89AC
+P 4050 10650
+F 0 "C3" H 4142 10696 50  0000 L CNN
+F 1 "4.7u" H 4142 10605 50  0000 L CNN
+F 2 "" H 4050 10650 50  0001 C CNN
+F 3 "~" H 4050 10650 50  0001 C CNN
+	1    4050 10650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C4
+U 1 1 5F3D8F27
+P 4250 10650
+F 0 "C4" H 4342 10696 50  0000 L CNN
+F 1 "0.1u" H 4342 10605 50  0000 L CNN
+F 2 "" H 4250 10650 50  0001 C CNN
+F 3 "~" H 4250 10650 50  0001 C CNN
+	1    4250 10650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C5
+U 1 1 5F3D915B
+P 4450 10650
+F 0 "C5" H 4542 10696 50  0000 L CNN
+F 1 "0.1u" H 4542 10605 50  0000 L CNN
+F 2 "" H 4450 10650 50  0001 C CNN
+F 3 "~" H 4450 10650 50  0001 C CNN
+	1    4450 10650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 10450 4250 10550
+Wire Wire Line
+	4450 10550 4250 10550
+Connection ~ 4250 10550
+Wire Wire Line
+	4250 10550 4050 10550
+Wire Wire Line
+	4050 10750 4250 10750
+Connection ~ 4250 10750
+Wire Wire Line
+	4250 10750 4450 10750
+Wire Wire Line
+	4250 10750 4250 10850
+$Comp
+L power:GND #PWR?
+U 1 1 5F3DF420
+P 650 5050
+F 0 "#PWR?" H 650 4800 50  0001 C CNN
+F 1 "GND" H 655 4877 50  0000 C CNN
+F 2 "" H 650 5050 50  0001 C CNN
+F 3 "" H 650 5050 50  0001 C CNN
+	1    650  5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5F3DFB6F
+P 950 5050
+F 0 "SW1" H 950 5335 50  0000 C CNN
+F 1 "SW_Push" H 950 5244 50  0000 C CNN
+F 2 "" H 950 5250 50  0001 C CNN
+F 3 "~" H 950 5250 50  0001 C CNN
+	1    950  5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  5050 650  5050
+Connection ~ 1950 4750
+$Comp
+L power:+5V #PWR?
+U 1 1 5F3E1DF6
+P 1200 4850
+F 0 "#PWR?" H 1200 4700 50  0001 C CNN
+F 1 "+5V" H 1215 5023 50  0000 C CNN
+F 2 "" H 1200 4850 50  0001 C CNN
+F 3 "" H 1200 4850 50  0001 C CNN
+	1    1200 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5F3E1743
+P 1200 4950
+F 0 "R1" H 1259 4996 50  0000 L CNN
+F 1 "10k" H 1259 4905 50  0000 L CNN
+F 2 "" H 1200 4950 50  0001 C CNN
+F 3 "~" H 1200 4950 50  0001 C CNN
+	1    1200 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1150 5050 1200 5050
+Connection ~ 1200 5050
+Wire Wire Line
+	1200 5050 1250 5050
+$Comp
+L MCU_Microchip_ATmega:ATmega32A-PU U1
 U 1 1 5F3AAD2B
-P 2750 3200
-F 0 "U?" H 2750 1111 50  0000 C CNN
-F 1 "ATmega32A-PU" H 2750 1020 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm" H 2750 3200 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-8155-8-bit-microcontroller-avr-atmega32a_datasheet.pdf" H 2750 3200 50  0001 C CNN
-	1    2750 3200
+P 1850 6750
+F 0 "U1" H 1850 5866 50  0000 C CNN
+F 1 "ATmega32A-PU" H 1850 6102 50  0000 C TNN
+F 2 "Package_DIP:DIP-40_W15.24mm" H 1850 6750 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-8155-8-bit-microcontroller-avr-atmega32a_datasheet.pdf" H 1850 6750 50  0001 C CNN
+	1    1850 6750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW?
+U 1 1 5F3E6DE9
+P 850 7800
+F 0 "SW?" H 850 8085 50  0000 C CNN
+F 1 "SW_Push" H 850 7994 50  0000 C CNN
+F 2 "" H 850 8000 50  0001 C CNN
+F 3 "~" H 850 8000 50  0001 C CNN
+	1    850  7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5F3E7372
+P 650 7900
+F 0 "#PWR?" H 650 7650 50  0001 C CNN
+F 1 "GND" H 655 7727 50  0000 C CNN
+F 2 "" H 650 7900 50  0001 C CNN
+F 3 "" H 650 7900 50  0001 C CNN
+	1    650  7900
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
