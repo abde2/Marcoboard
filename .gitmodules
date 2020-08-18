@@ -7,3 +7,6 @@
 [submodule "USBaspLoader"]
 	path = USBaspLoader
 	url = https://github.com/coseyfannitutti/USBaspLoader.git
+[submodule "Kicad files/OLED/KiCad-SSD1306_OLED-0.91-128x32"]
+	path = Kicad files/OLED/KiCad-SSD1306_OLED-0.91-128x32
+	url = https://github.com/MichMich/KiCad-SSD1306_OLED-0.91-128x32.git
