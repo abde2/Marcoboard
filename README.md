@@ -3,4 +3,5 @@
  The keyboard itself will be a 65% keyboard that will utilise 2 rotary encoders, with push switches, along with an OLED screen inbetween them so that you can easily tell which layer you are on. 
  RGB lighting may also be included if I can figure it out but it isn't exactly necessary. I may only create a capslock light for it.
  This is going to be useful for flashing the bootloader onto it. https://www.instructables.com/id/Burning-Arduino-Bootloader-to-Atmega-32A-PU-Using-/
+ http://vusb.wikidot.com/hardware
  
