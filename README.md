@@ -4,4 +4,4 @@
  RGB lighting may also be included if I can figure it out but it isn't exactly necessary. I may only create a capslock light for it.
  This is going to be useful for flashing the bootloader onto it. https://www.instructables.com/id/Burning-Arduino-Bootloader-to-Atmega-32A-PU-Using-/
  http://vusb.wikidot.com/hardware
- 
+ https://www.reddit.com/r/MechanicalKeyboards/comments/5xubd7/adding_oled_display_to_your_build_using_qmk/
