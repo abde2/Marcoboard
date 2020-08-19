@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name marcoboard-rescue)(type Legacy)(uri ${KIPRJMOD}/marcoboard-rescue.lib)(options "")(descr ""))
+  (lib (name MX_Alps_Hybrid)(type Legacy)(uri "C:/Users/JamesH/Desktop/gfsddfg/MarcoBoard/marcoboard/Kicad files/MX_Alps_Hybrid/Schematic Library/MX_Alps_Hybrid.lib")(options "")(descr ""))
+  (lib (name random-keyboard-parts)(type Legacy)(uri "C:/Users/JamesH/Desktop/gfsddfg/MarcoBoard/marcoboard/Kicad files/random-keyboard-parts.pretty/Schematic Library/random-keyboard-parts.lib")(options "")(descr ""))
 )

@@ -10,3 +10,6 @@
 [submodule "Kicad files/OLED/KiCad-SSD1306_OLED-0.91-128x32"]
 	path = Kicad files/OLED/KiCad-SSD1306_OLED-0.91-128x32
 	url = https://github.com/MichMich/KiCad-SSD1306_OLED-0.91-128x32.git
+[submodule "Kicad files/Type-C.pretty"]
+	path = Kicad files/Type-C.pretty
+	url = https://github.com/ai03-2725/Type-C.pretty.git
