@@ -306,24 +306,6 @@ X PD0 9 600 -1000 100 L 50 50 1 1 T
 ENDDRAW
 ENDDEF
 #
-# MX_Alps_Hybrid_MX-NoLED
-#
-DEF MX_Alps_Hybrid_MX-NoLED MX 0 40 Y Y 1 F N
-F0 "MX" -25 150 60 H V C CNN
-F1 "MX_Alps_Hybrid_MX-NoLED" -25 50 20 H V C CNN
-F2 "" -625 -25 60 H I C CNN
-F3 "" -625 -25 60 H I C CNN
-DRAW
-T 0 125 0 30 0 0 0 COL Normal 0 C C
-T 900 0 -75 30 0 0 0 ROW Normal 0 R C
-S -100 100 50 -50 0 0 0 N
-P 2 0 0 5 -50 -50 -50 50 N
-P 3 0 0 5 50 50 0 50 -50 75 N
-X COL 1 150 50 100 L 0 0 1 1 P
-X ROW 2 -50 -150 100 U 0 0 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Power_Protection_USBLC6-2SC6
 #
 DEF Power_Protection_USBLC6-2SC6 U 0 0 Y Y 1 F N
@@ -388,6 +370,24 @@ P 2 0 1 0 0 50 0 120 N
 P 2 0 1 0 100 50 -100 50 N
 X 1 1 -200 0 100 R 50 50 0 1 P
 X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# marcoboard-rescue_MX-NoLED-MX_Alps_Hybrid
+#
+DEF marcoboard-rescue_MX-NoLED-MX_Alps_Hybrid MX 0 40 Y Y 1 F N
+F0 "MX" -25 150 60 H V C CNN
+F1 "marcoboard-rescue_MX-NoLED-MX_Alps_Hybrid" -25 50 20 H V C CNN
+F2 "" -625 -25 60 H I C CNN
+F3 "" -625 -25 60 H I C CNN
+DRAW
+T 0 125 0 30 0 0 0 COL Normal 0 C C
+T 900 0 -75 30 0 0 0 ROW Normal 0 R C
+S -100 100 50 -50 0 0 0 N
+P 2 0 0 5 -50 -50 -50 50 N
+P 3 0 0 5 50 50 0 50 -50 75 N
+X COL 1 150 50 100 L 0 0 1 1 P
+X ROW 2 -50 -150 100 U 0 0 1 1 P
 ENDDRAW
 ENDDEF
 #
