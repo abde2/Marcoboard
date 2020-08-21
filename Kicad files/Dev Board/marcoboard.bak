@@ -218,7 +218,7 @@ U 1 1 5F3F13C1
 P 6500 8600
 F 0 "J1" H 6221 8696 50  0000 R CNN
 F 1 "AVR-ISP-6" H 6221 8605 50  0000 R CNN
-F 2 "" V 6250 8650 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_2x03_P2.00mm_Vertical" V 6250 8650 50  0001 C CNN
 F 3 " ~" H 5225 8050 50  0001 C CNN
 	1    6500 8600
 	1    0    0    -1  
@@ -539,7 +539,7 @@ U 1 1 5F4CB910
 P 4050 2900
 F 0 "CON1" H 3950 3100 50  0000 L CNN
 F 1 "OLED" H 3950 2600 50  0000 L CNN
-F 2 "" H 4050 2900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x04_P2.00mm_Vertical" H 4050 2900 50  0001 C CNN
 F 3 "~" H 4050 2900 50  0001 C CNN
 	1    4050 2900
 	1    0    0    -1  
@@ -2861,4 +2861,30 @@ Text GLabel 5450 6500 2    50   Input ~ 0
 Row1
 Text GLabel 5450 6400 2    50   Input ~ 0
 Row0
+Text GLabel 5450 6800 2    50   Input ~ 0
+Col0
+Text GLabel 5450 6900 2    50   Input ~ 0
+Enc1A
+Text GLabel 5450 7000 2    50   Input ~ 0
+Enc1B
+Text GLabel 5450 7100 2    50   Input ~ 0
+Enc2A
+Text GLabel 5450 7200 2    50   Input ~ 0
+Enc2B
+Text GLabel 5450 5900 2    50   Input ~ 0
+Col1
+Text GLabel 5450 6000 2    50   Input ~ 0
+Col2
+Text GLabel 5450 6100 2    50   Input ~ 0
+Col3
+Text GLabel 5450 6200 2    50   Input ~ 0
+Col4
+Text GLabel 5450 6300 2    50   Input ~ 0
+Col5
+Text GLabel 5450 9200 2    50   Input ~ 0
+Col6
+Text GLabel 5450 9100 2    50   Input ~ 0
+Col7
+Text GLabel 5450 8700 2    50   Input ~ 0
+Col8
 $EndSCHEMATC
