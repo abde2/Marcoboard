@@ -5,3 +5,10 @@
  This is going to be useful for flashing the bootloader onto it. https://www.instructables.com/id/Burning-Arduino-Bootloader-to-Atmega-32A-PU-Using-/
  http://vusb.wikidot.com/hardware
  https://www.reddit.com/r/MechanicalKeyboards/comments/5xubd7/adding_oled_display_to_your_build_using_qmk/
+ 
+ 
+ 
+ Current Progress:
+ The first revision of the development board is finished. This is so that I can hand solder the components because I won't be able to manage QFN packages. 
+ ![alt text](https://github.com/abde2/Marcoboard/blob/master/Devpcb_1.JPG)
+ ![alt text](https://github.com/abde2/Marcoboard/blob/master/Devpcb_2.JPG)
